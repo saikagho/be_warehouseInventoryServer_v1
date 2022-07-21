@@ -33,7 +33,7 @@ const deleteProduct = async (product) => {
   const articleListArray = articleObjArray && articleObjArray[0]?.contain_articles || [];
   const updatedArticleObjArray = productList?.products?.filter(obj => obj?.name !== product);
   const inventoryListArray = inventoryList?.inventory || [];
-  let updatedInventoryList = [];
+  let updatedInventoryList = {}, updatedProductList = {};
 
   if (articleListArray.length > 0) {
     const newInventoryList = await removeArticleFromInventory(articleListArray, inventoryListArray)
@@ -56,7 +56,7 @@ const addProduct = async (payload) => {
   const productList = await getProductsFileContent();
   const inventoryList = await getInventoryFileContent();
   const inventoryListArray = inventoryList?.inventory || [];
-  let updatedProductList = {}, updatedInventoryList = [];
+  let updatedProductList = {}, updatedInventoryList = {};
 
   if (productList?.products !== undefined) {
     updatedProductList = {
