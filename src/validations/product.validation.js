@@ -2,8 +2,8 @@
 const Joi = require('joi');
 
 const removeProducts = {
-    body: Joi.object().keys({
-        productName: Joi.string().required(),
+    params: Joi.object().keys({
+        id: Joi.string().required(),
     }),
 };
 

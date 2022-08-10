@@ -1,8 +1,1 @@
-{
-  "inventory": [
-    { "art_id": "1", "name": "leg", "stock": "8" },
-    { "art_id": "2", "name": "screw", "stock": "9" },
-    { "art_id": "3", "name": "seat", "stock": "2" },
-    { "art_id": "4", "name": "table top", "stock": "1" }
-  ]
-}
+{"inventory":[{"art_id":"1","name":"leg","stock":"18"},{"art_id":"2","name":"screw","stock":"17"},{"art_id":"3","name":"seat","stock":"1"},{"art_id":"4","name":"table top","stock":"3"}]}

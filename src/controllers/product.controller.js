@@ -22,7 +22,7 @@ const addProducts = catchAsync(async (req, res) => {
 });
 
 const removeProducts = catchAsync(async (req, res) => {
-    const productsDelResp = await productService.deleteProduct(req.body.productName);
+    const productsDelResp = await productService.deleteProduct(req.params.id);
     if (productsDelResp?.length === 0) {
       throw new ApiError(httpStatus.NOT_FOUND, ERROR_TEXT_MESSAGES.UNABLE_TO_DELETE);
     }

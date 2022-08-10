@@ -29,9 +29,9 @@ const deleteProduct = async (product) => {
   const productList = await getProductsFileContent();
   const inventoryList = await getInventoryFileContent();
 
-  const articleObjArray = productList?.products?.filter(obj => obj?.name === product) || [];
+  const articleObjArray = productList?.products?.filter(obj => obj?.id === product) || [];
   const articleListArray = articleObjArray && articleObjArray[0]?.contain_articles || [];
-  const updatedArticleObjArray = productList?.products?.filter(obj => obj?.name !== product);
+  const updatedArticleObjArray = productList?.products?.filter(obj => obj?.id !== product);
   const inventoryListArray = inventoryList?.inventory || [];
   let updatedInventoryList = {}, updatedProductList = {};
 

@@ -12,10 +12,10 @@ const ERROR_TEXT_MESSAGES = {
 
 const URL = {
     BASE_URI : "/warehouse",
-    REMOVE_PRODUCT_URI : "/remove-product",
-    ADD_PRODUCT_URI : "/add-product",
-    GET_PRODUCT_URI : "/get-product-list",
-    GET_INVENTORY_URI : "/get-inventory-list",
+    REMOVE_PRODUCT_URI : "/:id",
+    ADD_PRODUCT_URI : "/",
+    GET_PRODUCT_URI : "/",
+    GET_INVENTORY_URI : "/",
 } 
 
 module.exports = {
