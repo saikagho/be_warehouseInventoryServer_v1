@@ -167,7 +167,7 @@ To use the endpoints a header "Content-Type: application/json" need to be config
 
 ```Shell
 
-GET /warehouse/inventory/get-inventory-list - To fetch the inventory details
+GET /warehouse/inventory - To fetch the inventory details
 
 ```
 
@@ -175,9 +175,9 @@ GET /warehouse/inventory/get-inventory-list - To fetch the inventory details
 
 ```Shell
 
-GET /warehouse/product/get-product-list - To fetch the product details
-PUT /warehouse/product/add-product - To add a product in the products list
-PUT /warehouse/product/remove-product - To remove a product from the products list
+GET /warehouse/product - To fetch the product details
+POST /warehouse/product - To add a product in the products list
+DELETE /warehouse/product - To remove a product from the products list
 
 ```
 
