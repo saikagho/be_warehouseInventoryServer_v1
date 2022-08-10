@@ -177,7 +177,7 @@ GET /warehouse/inventory - To fetch the inventory details
 
 GET /warehouse/product - To fetch the product details
 POST /warehouse/product - To add a product in the products list
-DELETE /warehouse/product - To remove a product from the products list
+DELETE /warehouse/product/:id - To remove a product from the products list using the product id in the params
 
 ```
 
